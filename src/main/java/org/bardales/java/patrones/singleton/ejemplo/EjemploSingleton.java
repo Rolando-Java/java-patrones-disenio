@@ -1,8 +1,8 @@
-package org.bardales.java.patrones.singleton;
+package org.bardales.java.patrones.singleton.ejemplo;
 
 import org.bardales.java.patrones.singleton.ConexionBD;
 
-public class SingletonEjemplo {
+public class EjemploSingleton {
 
     public static void main(String... args) {
 
