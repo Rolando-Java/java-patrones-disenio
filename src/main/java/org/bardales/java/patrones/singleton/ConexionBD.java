@@ -11,7 +11,7 @@ public class ConexionBD {
     }
 
     public static ConexionBD getInstancia() {
-        if(Objects.isNull(ConexionBD.instancia)) ConexionBD.instancia = new ConexionBD();
+        if (Objects.isNull(ConexionBD.instancia)) ConexionBD.instancia = new ConexionBD();
         return ConexionBD.instancia;
     }
 
