@@ -2,7 +2,7 @@ package org.bardales.java.patrones.abstractfactory;
 
 public abstract class PizzeriaZonaAbstractFactory {
 
-    protected PizzeriaZonaAbstractFactory(){
+    protected PizzeriaZonaAbstractFactory() {
 
     }
 

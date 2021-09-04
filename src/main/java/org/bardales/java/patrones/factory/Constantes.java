@@ -2,8 +2,9 @@ package org.bardales.java.patrones.factory;
 
 public class Constantes {
 
-    private Constantes() {}
+    private Constantes() {
+    }
 
-    public enum TipoNotification { SMS, EMAIL, PUSH }
+    public enum TipoNotification {SMS, EMAIL, PUSH}
 
 }

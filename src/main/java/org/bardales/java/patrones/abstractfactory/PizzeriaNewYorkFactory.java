@@ -8,7 +8,7 @@ public class PizzeriaNewYorkFactory extends PizzeriaZonaAbstractFactory {
 
     @Override
     PizzaProducto crearPizza(Constantes.TipoPizza tipoPizza) {
-        return switch(tipoPizza) {
+        return switch (tipoPizza) {
             case VEGETARIANA -> new PizzaNewYorkVegetariana();
             case PEPPERONI -> new PizzaNewYorkPepperoni();
             case ITALIANA -> new PizzaNewYorkItaliana();

@@ -62,9 +62,9 @@ public abstract class PizzaProducto {
     @Override
     public String toString() {
         return new StringBuilder().append("Nombre: ").append(this.nombre).append("\n")
-        .append("Masa: ").append(this.masa).append("\n")
-        .append("Salsa: ").append(this.salsa).append("\n")
-        .append("Ingredientes: ").append(this.ingredientes.stream().sorted().reduce((a, b) -> a.concat(", ").concat(b)).orElse("")).toString();
+                .append("Masa: ").append(this.masa).append("\n")
+                .append("Salsa: ").append(this.salsa).append("\n")
+                .append("Ingredientes: ").append(this.ingredientes.stream().sorted().reduce((a, b) -> a.concat(", ").concat(b)).orElse("")).toString();
     }
 
 }
