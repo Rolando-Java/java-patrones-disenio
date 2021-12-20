@@ -5,6 +5,9 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+# Checkstyle intellij
+.idea/checkstyle-idea.xml
+
 # IntelliJ
 out/
 
