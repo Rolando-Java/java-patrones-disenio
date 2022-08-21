@@ -1,19 +1,25 @@
 package org.bardales.java.patrones.singleton.ejemplo;
 
-import org.bardales.java.patrones.singleton.ConexionBD;
+import org.bardales.java.patrones.singleton.ConexionMongoBD;
+import org.bardales.java.patrones.singleton.ConexionRedisBD;
 
 public class EjemploSingleton {
 
     public static void main(String... args) {
 
-        ConexionBD conexionBD = ConexionBD.getInstancia();
-        ConexionBD conexionBDDos = ConexionBD.getInstancia();
+        ConexionMongoBD conexionMongoBD = ConexionMongoBD.getInstance();
+        System.out.println("conexionMongoBD = " + conexionMongoBD);
+        ConexionMongoBD conexionMongoBD2 = ConexionMongoBD.getInstance();
+        System.out.println("conexionMongoBD2 = " + conexionMongoBD2);
 
-        boolean bool = (conexionBD == conexionBDDos);
-        System.out.println("bool = " + bool);//true
+        assert conexionMongoBD == conexionMongoBD2; // true
 
-        System.out.println("conexionBD = " + conexionBD);//org.bardales.java.patrones.singleton.ConexionBD@5b480cf9
-        System.out.println("conexionBDDos = " + conexionBDDos);//org.bardales.java.patrones.singleton.ConexionBD@5b480cf9
+        ConexionRedisBD conexionRedisBD = ConexionRedisBD.getInstance();
+        System.out.println("conexionRedisBD = " + conexionRedisBD);
+        ConexionRedisBD conexionRedisBD2 = ConexionRedisBD.getInstance();
+        System.out.println("conexionRedisBD2 = " + conexionRedisBD2);
+
+        assert conexionRedisBD == conexionRedisBD2;
 
     }
 
